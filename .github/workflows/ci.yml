@@ -1,0 +1,36 @@
+name: CI - Tech Challenge Pipeline
+
+# Define quais eventos disparam a automação
+on:
+  push:
+    branches: [ "main", "master", "develop" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Baixa o código do repositório para a máquina virtual do GitHub
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      # 2. Configura a versão do Node.js ambiente
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-size: '20' # Versão estável do Node
+          cache: 'npm'   # Otimiza a velocidade salvando o cache do node_modules
+
+      # 3. Instala todas as dependências listadas no package.json
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Verifica se o TypeScript compila com sucesso para JavaScript
+      - name: Verify TypeScript Compilation (Build)
+        run: npm run build
+
+      # 5. Executa os testes automatizados e gera o relatório de cobertura
+      - name: Run Tests and Check 100% Coverage
+        run: npm run test

@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  # Serviço 1: O Servidor Node.js do Blog
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tech_blog_api
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - MONGO_URI=mongodb://mongodb:27017/tech_challenge_blog
+    depends_on:
+      - mongodb
+
+  # Serviço 2: O Banco de Dados MongoDB
+  mongodb:
+    image: mongo:latest
+    container_name: tech_blog_db
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
