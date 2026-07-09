@@ -9,10 +9,10 @@
 
 *   **Rodrigo Nose de Camargo**  
     📧 [rodrigocamargo.dev@gmail.com](mailto:rodrigocamargo.dev@gmail.com)  
-    🔗 [GitHub Profile](https://github.com)
+    🔗 [GitHub Profile](https://github.com/rodrigocamargodev)
 
 *   **Felipe de Oliveira de Souza**  
-    🔗 [GitHub Profile](https://github.com)
+    🔗 [GitHub Profile](https://github.com/felipedos)
 
 ---
 
