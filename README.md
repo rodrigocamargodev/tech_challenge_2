@@ -1,6 +1,24 @@
 # 🚀 Tech Challenge - Plataforma Dinâmica de Blogging (Back-end)
 
-Plataforma de blogging de alta performance desenvolvida para centralizar, gerenciar e transmitir conhecimento de docentes para alunos da rede pública de ensino. Esta aplicação representa a evolução e refatoração em larga escala de uma solução anterior construída em OutSystems, agora reestruturada em ambiente Node.js com TypeScript e arquitetura em camadas para suportar um panorama de distribuição a nível nacional.
+### 🎓 FIAP - Full Stack Development
+**Pós Tech** | **Turma:** 9FSDT | **Grupo:** 39
+
+---
+
+## 👥 Integrantes do Grupo 39
+
+*   **Rodrigo Nose de Camargo**  
+    📧 [rodrigocamargo.dev@gmail.com](mailto:rodrigocamargo.dev@gmail.com)  
+    🔗 [GitHub Profile](https://github.com)
+
+*   **Felipe de Oliveira de Souza**  
+    🔗 [GitHub Profile](https://github.com)
+
+---
+
+## 📝 Descrição do Projeto
+
+Plataforma de blogging de alta performance desenvolvida para centralizar, gerenciar e transmitir conteúdo de docentes para alunos da rede pública de ensino. Esta aplicação representa a evolução e refatoração em larga escala de uma solução anterior construída em OutSystems, agora reestruturada em ambiente Node.js com TypeScript e arquitetura em camadas para suportar um panorama de distribuição a nível nacional.
 
 ---
 
@@ -100,13 +118,13 @@ Todas as requisições devem incluir a chave `Authorization` no cabeçalho (*Hea
 ### 📌 6. Exclusão de Postagem (Exclusivo Docentes)
 *   **Rota:** `DELETE /posts/:id`
 *   **Header:** `Authorization: professor123`
-*   **Resposta de Sucesso:** Status `200 OK` confirmando a deleção do registro.
+*   **Resposta de Sucesso:** Status `200 OK` confirmando a deleção del registro.
 
 ---
 
 ## 🧪 Suíte de Testes e Cobertura de Código
 
-Buscando a máxima estabilidade, a aplicação foi blindada com **100% de Cobertura de Testes Unitários e de Integração** (Statements, Branches, Functions e Lines), superando amplamente os 20% mínimos estipulados no briefing do desafio.
+Buscando a máxima stabileza, a aplicação foi blindada com **100% de Cobertura de Testes Unitários e de Integração** (Statements, Branches, Functions e Lines), superando amplamente os 20% mínimos estipulados no briefing do desafio.
 
 Para executar os testes e verificar os indicadores de cobertura localmente:
 ```bash
